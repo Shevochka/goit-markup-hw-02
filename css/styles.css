@@ -1,0 +1,62 @@
+/*Primary color of text color: #757575;  */
+/* color of buttons blue and text in background: #2196f3; color: #FFFFFF; */
+/* staf positions color: #757575; */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --logo-black-color: #000000;
+  --white-primary-color: #ffffff;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--white-primary-color);
+}
+.list {
+  list-style: none;
+}
+.logo {
+  color: var(--logo-black-color-color);
+}
+.logo-web {
+  color: var(--accent-color);
+}
+
+/* Site Nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current{
+color: var(--accent-color);
+}
+
+/* HERO */
+
+/* .hero{
+color: #FFFFFF;
+} */
+
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Features */
+.features-list .title {
+  color: var(--title-text-color);
+}
+
+/* Button */
+.button {
+  color: var(--white-primary-color);
+  background-color: var(--accent-color);
+}
+.button.primary {
+  color: var(--white-primary-color);
+  background-color: var(--accent-color);
+}
