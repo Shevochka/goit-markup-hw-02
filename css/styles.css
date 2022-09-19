@@ -39,7 +39,6 @@ body {
   font-family: 'Roboto' sans-serif;
   color: var(--primary-text-color);
   background-color: var(--white-primary-color);
-  
 }
 
 .list {
@@ -53,6 +52,10 @@ body {
   color: var(--logo-black-color);
 }
 .logo-web {
+  color: var(--accent-color);
+}
+
+.header-nav .link.current {
   color: var(--accent-color);
 }
 
