@@ -1,87 +1,243 @@
 /*Primary color of text color: #757575;  */
 /* color of buttons blue and text in background: #2196f3; color: #FFFFFF; */
 /* staf positions color: #757575; */
+
+/* .visually-hidden {  position: absolute;  width: 1px;  height: 1px;  margin: -1px;  border: 0;  padding: 0;    white-space: nowrap;  clip-path: inset(100%);  clip: rect(0 0 0 0);  overflow: hidden;} */
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --logo-black-color: #000000;
   --white-primary-color: #ffffff;
+  --background-color-footer: #2f303a;
 }
 
 /* Fonts */
 @font-face {
-    font-family: roboto-400;
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  font-family: roboto-400;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 @font-face {
-    font-family: roboto-700;
-    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+  font-family: roboto-700;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
 }
 @font-face {
-    font-family: roboto-500;
-    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+  font-family: roboto-500;
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
 }
 @font-face {
-    font-family: roboto-900;
-    src: url(../fonts/Roboto/Roboto-Black.ttf);
+  font-family: roboto-900;
+  src: url(../fonts/Roboto/Roboto-Black.ttf);
 }
 @font-face {
-    font-family: raleway-700;
-    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+  font-family: raleway-700;
+  src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
 }
-
 
 body {
+  font-family: 'Roboto' sans-serif;
   color: var(--primary-text-color);
   background-color: var(--white-primary-color);
-  font-family: "Roboto" sans-serif;
+  
 }
+
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
+/* -------------------Header Site Nav------------------------ */
 .logo {
-  color: var(--logo-black-color-color);
+  color: var(--logo-black-color);
 }
 .logo-web {
   color: var(--accent-color);
 }
 
-/* Site Nav */
-.site-nav .link {
+.header-link {
+  font-weight: roboto-500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+
+.header-info {
+  font-weight: roboto-500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.header-mail,
+.header-tel {
+  font-weight: roboto-500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.header-link:hover,
+.header-link:focus {
   color: var(--accent-color);
 }
-
-.site-nav .link.current{
-color: var(--accent-color);
+.header-mail:hover,
+.header-tel:hover,
+.header-mail:focus,
+.header-tel:focus {
+  color: var(--accent-color);
 }
 
 /* HERO */
 
-/* .hero{
-color: #FFFFFF;
-} */
+/* -------------------Effective Solutions-------------------- */
+.hero {
+  background-color: var(--background-color-footer);
+}
+.hero-title {
+  color: var(--white-primary-color);
+}
 
-/* Section */
-.section-title {
+.hero-btn {
+  font-family: inherit;
+  font-weight: roboto-700;
+  font-size: 16px;
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-primary-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  border-radius: 4px;
+}
+
+/* ---------------------------Features--------------------------- */
+
+.features-title {
+  font-weight: roboto-700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.features-item {
+  font-weight: roboto-400;
+  font-size: 14px;
+  line-height: 6;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/* ------------------Occupatoion Section---------------- */
+.ocupation-title {
+  font-weight: roboto-700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
-/* Features */
-.features-list .title {
+/* --------------------Our Team --------------------------*/
+
+.team-title {
+  font-weight: roboto-700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
-/* Button */
-.button {
-  color: var(--white-primary-color);
-  background-color: var(--accent-color);
+.staff-name {
+  font-weight: roboto-500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
-.button.primary {
+.staff-position {
+  font-weight: roboto-400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/* ------------------------Footer---------------------- */
+
+.footer {
+  background-color: var(--background-color-footer);
+}
+
+.footer-location {
+  font-weight: roboto-400;
+  font-size: 14px;
+  line-height: 1.71;
+  er-spacing: 0.03em;
   color: var(--white-primary-color);
+}
+.footer-location:hover,
+.footer-location:focus {
+  color: var(--accent-color);
+}
+
+.footer-mail,
+.footer-tel {
+  font-weight: roboto-400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--accent-color);
+}
+/* ----------------Portfolio Projects Main--------------------- */
+.project-list .list {
+  text-decoration: none;
+}
+.project-list-title {
+  font-weight: roboto-700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.project-list-item {
+  font-weight: roboto-400;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.menu-btn {
+  font-family: inherit;
+  font-weight: roboto-500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  cursor: pointer;
+}
+
+.menu-btn:hover,
+.menu-btn:focus {
   background-color: var(--accent-color);
+  color: var(--white-primary-color);
 }
