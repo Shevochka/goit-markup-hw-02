@@ -5,12 +5,17 @@
 /* .visually-hidden {  position: absolute;  width: 1px;  height: 1px;  margin: -1px;  border: 0;  padding: 0;    white-space: nowrap;  clip-path: inset(100%);  clip: rect(0 0 0 0);  overflow: hidden;} */
 
 :root {
-  --primary-text-color: #757575;
   --title-text-color: #212121;
-  --accent-color: #2196f3;
-  --logo-black-color: #000000;
   --white-primary-color: #ffffff;
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+  --projects-bacground-color: #eeeeee;
+  --background-color-team: #f5f4fa;
+  --logo-black-color: #000000;
+  --team-hidden-color: rgba(255, 255, 255, 0.6);
   --background-color-footer: #2f303a;
+  --header-background-color: #ececec;
+  --background-btn-color: #188ce8;
 }
 
 /* Fonts */
@@ -36,9 +41,23 @@
 }
 
 body {
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
   background-color: var(--white-primary-color);
+  font-size: 14px;
+  letter-spacing: 00.03em;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .list {
@@ -49,10 +68,15 @@ body {
 }
 /* -------------------Header Site Nav------------------------ */
 .logo {
-  color: var(--logo-black-color);
-}
-.logo-web {
   color: var(--accent-color);
+  font-family: releway-700;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-studio {
+  color: var(--logo-black-color);
 }
 
 .header-nav .link.current {
@@ -60,7 +84,7 @@ body {
 }
 
 .header-link {
-  font-weight: roboto-500;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -68,7 +92,7 @@ body {
 }
 
 .header-info {
-  font-weight: roboto-500;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -76,7 +100,7 @@ body {
 }
 .header-mail,
 .header-tel {
-  font-weight: roboto-500;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -101,32 +125,35 @@ body {
   background-color: var(--background-color-footer);
 }
 .hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--white-primary-color);
 }
 
 .hero-btn {
   font-family: inherit;
-  font-weight: roboto-700;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--white-primary-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  color: var(--white-primary-color);
+  background-color: var(--background-btn-color);
+  cursor: pointer;
 }
 
 /* ---------------------------Features--------------------------- */
 
 .features-title {
-  font-weight: roboto-700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -134,16 +161,16 @@ body {
   color: var(--title-text-color);
 }
 .features-item {
-  font-weight: roboto-400;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 6;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
 /* ------------------Occupatoion Section---------------- */
-.ocupation-title {
-  font-weight: roboto-700;
+.occupation-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -152,9 +179,11 @@ body {
 }
 
 /* --------------------Our Team --------------------------*/
-
+.team {
+  background-color: var(--background-color-team);
+}
 .team-title {
-  font-weight: roboto-700;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -163,7 +192,7 @@ body {
 }
 
 .staff-name {
-  font-weight: roboto-500;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -171,7 +200,7 @@ body {
   color: var(--title-text-color);
 }
 .staff-position {
-  font-weight: roboto-400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -183,9 +212,11 @@ body {
 .footer {
   background-color: var(--background-color-footer);
 }
-
+.footer-address {
+  font-style: normal;
+}
 .footer-location {
-  font-weight: roboto-400;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -198,7 +229,7 @@ body {
 
 .footer-mail,
 .footer-tel {
-  font-weight: roboto-400;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -217,14 +248,14 @@ body {
   text-decoration: none;
 }
 .project-list-title {
-  font-weight: roboto-700;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 .project-list-item {
-  font-weight: roboto-400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
@@ -232,12 +263,14 @@ body {
 }
 .menu-btn {
   font-family: inherit;
-  font-weight: roboto-500;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
   color: var(--title-text-color);
+  background-color: var(--background-color-team);
   cursor: pointer;
 }
 
