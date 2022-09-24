@@ -69,15 +69,16 @@ body {
 /* -------------------Header Site Nav------------------------ */
 .logo {
   color: var(--accent-color);
-  font-family: releway-700;
+  font-family: raleway-700;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.logo-studio {
+.header-studio {
   color: var(--logo-black-color);
 }
+
 
 .header-nav .link.current {
   color: var(--accent-color);
@@ -210,6 +211,9 @@ body {
 
 .footer {
   background-color: var(--background-color-footer);
+}
+.footer-studio{
+  color: var(--white-primary-color);
 }
 .footer-address {
   font-style: normal;
